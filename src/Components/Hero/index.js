@@ -1,6 +1,5 @@
 /* eslint-disable import/no-named-as-default */
 import React, { useState } from 'react';
-
 import { HeroContainer, HeroWrapper, HeroButton } from './HeroElements';
 
 import Sidebar from '../Sidebar';
@@ -19,10 +18,9 @@ function Hero() {
       <HeroContainer>
         <HeroWrapper>
           <h1>UpperCluch</h1>
-          <p>Servidores de DM</p>
-          <img src="" alt="background" />
+          <p>Servidores no Brasil de DM</p>
+          <HeroButton to="/">Servidores</HeroButton>
         </HeroWrapper>
-        <HeroButton to="/">Servidores</HeroButton>
       </HeroContainer>
     </>
   );

@@ -9,8 +9,8 @@ function Sidebar({ isOpen, toggle }) {
       <SidebarMenu>
         <SidebarLink to="/">Se torne um VIP</SidebarLink>
         <SidebarLink to="/">Servidores</SidebarLink>
-        <SidebarLink to="/">Suporte</SidebarLink>
         <SidebarLink to="/">FAQ</SidebarLink>
+        <SidebarLink to="/">Suporte</SidebarLink>
       </SidebarMenu>
     </SidebarContainer>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../Assets/images/logo-upc.jpg';
 
-import { Foo, FooLink, IconLink, FooContent } from './FooterElements';
+import { Foo, FooLink, IconLink, FooContent, By } from './FooterElements';
 
 export default function Footer() {
   return (
@@ -16,6 +16,15 @@ export default function Footer() {
         <FooLink to="/">Suporte</FooLink>
         <FooLink to="/">FAQ</FooLink>
       </FooContent>
+
+      <By>
+        <p>
+          Feito com carinho por
+          <a className="a" href="https://github.com/igornj">
+            Igor Nunes
+          </a>
+        </p>
+      </By>
     </Foo>
   );
 }

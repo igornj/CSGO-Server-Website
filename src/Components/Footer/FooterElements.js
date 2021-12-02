@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export const Foo = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
   background: #fff;
@@ -12,7 +12,7 @@ export const Foo = styled.div`
   white-space: nowrap;
   z-index: 999;
   width: 100%;
-  max-height: 200px;
+  height: 150px;
 `;
 
 export const IconLink = styled(Link)`
@@ -26,7 +26,7 @@ export const FooContent = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 1rem 1rem 0.5rem 1rem;
+  margin: 0rem 4rem 0.5rem 1rem;
 `;
 
 export const FooLink = styled(Link)`
@@ -37,5 +37,20 @@ export const FooLink = styled(Link)`
   &:hover {
     transition: all 0.2s ease-in-out;
     color: #adadad;
+  }
+`;
+
+export const By = styled.div`
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 500%);
+  p {
+    font-size: 0.6rem;
+  }
+
+  a.a {
+    text-decoration: none;
+    color: blue;
+    margin-left: 3px;
   }
 `;

@@ -5,10 +5,11 @@ export const SidebarContainer = styled.aside`
   position: fixed;
   background: #0a0a0a;
   top: ${({ isOpen }) => (isOpen ? '5rem' : '-60rem')};
-  left: 8rem;
+  left: 0rem;
+  right: 0;
   width: 100vw;
-  height: 450px;
-  z-index: 999;
+  height: 500px;
+  z-index: 2;
   transition: 0.3s ease-in-out;
 
   @media (min-width: 700px) {
@@ -24,6 +25,7 @@ export const SidebarMenu = styled.div`
 `;
 
 export const SidebarLink = styled(Link)`
+  text-align: center;
   padding: 2rem;
   color: white;
   width: 100%;

@@ -19,9 +19,8 @@ export default function Navbar({ toggle }) {
       </IconLink>
 
       <NavContent>
-        <Bars onClick={toggle} />
         <NavButton to="/">VIP</NavButton>
-        <NavLink to="/">Se torne um VIP</NavLink>
+        <Bars onClick={toggle} />
         <NavLink to="/">Servidores</NavLink>
         <NavLink to="/">Suporte</NavLink>
         <NavLink to="/">FAQ</NavLink>

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import bgImg from '../../Assets/images/mirage.jpeg';
 
 export const HeroContainer = styled.div`
   display: flex;
@@ -9,29 +10,51 @@ export const HeroContainer = styled.div`
   flex-direction: column;
   height: 550px;
   color: white;
-  background: #001324;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url(${bgImg});
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (min-width: 700px) {
+    align-items: flex-start;
+    text-align: left;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(${bgImg});
+    background-position: center;
+    background-size: cover;
+  } ;
 `;
 
 export const HeroWrapper = styled.div`
-  img {
-    position: absolute;
-    top: 7rem;
-    left: 0;
-    width: 100vw;
-    height: 56vh;
-    min-width: 100vw;
-    min-height: 50vh;
-    opacity: 20%;
-    border-radius: 10px;
-  }
   h1 {
-    font-size: clamp(1rem, 2rem, 3.5rem);
+    font-size: clamp(1rem, 2.5rem, 3.5rem);
     z-index: 1;
     letter-spacing: 1px;
   }
   p {
+    margin-top: 5px;
+    margin-bottom: 3rem;
     font-weight: 100;
-    font-size: 0.8rem;
+    font-size: 1rem;
+  }
+
+  @media screen and (min-width: 700px) {
+    transition: all 0.2s ease-in-out;
+    margin-left: 5rem;
+
+    h1 {
+      transition: all 0.2s ease-in-out;
+      font-size: clamp(1rem, 4rem, 5rem);
+    }
+    p {
+      transition: all 0.2s ease-in-out;
+      font-weight: 100;
+      font-size: clamp(0.8rem, 1.5rem, 2rem);
+    }
   }
 `;
 
@@ -40,14 +63,19 @@ export const HeroButton = styled(Link)`
   color: #fff;
   background: #0a0a0a;
   padding: 1rem 2rem;
-  margin-top: 5rem;
   border-radius: 5px;
-  z-index: 1;
   transition: all 0.2s ease-in-out;
+  z-index: 1;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
     color: #0a0a0a;
+  }
+
+  @media screen and (min-width: 700px) {
+    padding: 1rem 5rem;
+    font-size: 1.2rem;
   }
 `;

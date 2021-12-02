@@ -23,7 +23,10 @@ export const IconLink = styled(Link)`
   }
 `;
 
-export const NavContent = styled.div``;
+export const NavContent = styled.div`
+  display: flex;
+  align-items: center;
+`;
 
 export const NavLink = styled(Link)`
   color: #fff;
@@ -49,12 +52,12 @@ export const NavButton = styled(Link)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
+    background: #c7c7c7;
     color: #0a0a0a;
   }
 
   @media screen and (max-width: 700px) {
-    display: none;
+    margin-right: 2.5rem;
   }
 `;
 
@@ -63,6 +66,12 @@ export const Bars = styled(FaBars)`
   color: #fff;
   cursor: pointer;
   margin-right: 2rem;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    color: #c7c7c7;
+  }
 
   @media screen and (min-width: 700px) {
     display: none;
