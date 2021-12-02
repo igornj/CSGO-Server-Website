@@ -12,14 +12,17 @@ export const MainContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: #fff;
 `;
 
 export const MainTitle = styled.div`
-  margin: 2.5rem 1rem;
-  color: white;
+  color: #0a0a0a;
+  height: 200px;
+  margin-top: 2rem;
+  width: 70vw;
 
   h1 {
-    font-weight: 100;
+    font-weight: bold;
     font-size: 1.7rem;
     text-align: center;
     margin-bottom: 10px;
@@ -28,6 +31,10 @@ export const MainTitle = styled.div`
   p {
     text-align: center;
   }
+
+  @media screen and (max-width: 700px) {
+    width: 80vw;
+  } ;
 `;
 
 export const MainContent = styled.div`
@@ -35,8 +42,8 @@ export const MainContent = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 5rem 2rem 5rem 2rem;
-  color: white;
+  margin: 1rem 2rem 1rem 2rem;
+  color: #0a0a0a;
   width: 40%;
   text-align: center;
 
@@ -65,33 +72,33 @@ export const MainContent = styled.div`
 `;
 
 export const Signal = styled(FaSignal)`
-  color: white;
+  color: #0a0a0a;
   font-size: 4rem;
-  opacity: 7%;
+  opacity: 20%;
 `;
 
 export const Meter = styled(FaTachometerAlt)`
-  color: white;
+  color: #0a0a0a;
   font-size: 4rem;
-  opacity: 7%;
+  opacity: 20%;
 `;
 
 export const Hat = styled(FaHatCowboy)`
-  color: white;
+  color: #0a0a0a;
   font-size: 4rem;
-  opacity: 7%;
+  opacity: 20%;
 `;
 
 export const Headset = styled(FaHeadset)`
-  color: white;
+  color: #0a0a0a;
   font-size: 3.5rem;
-  opacity: 7%;
+  opacity: 20%;
   margin-bottom: 10px;
 `;
 
 export const Emoji = styled(FaGrinStars)`
-  color: white;
+  color: #0a0a0a;
   font-size: 3.5rem;
-  opacity: 7%;
+  opacity: 20%;
   margin-bottom: 10px;
 `;

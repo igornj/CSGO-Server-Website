@@ -21,9 +21,9 @@ export default function Navbar({ toggle }) {
       <NavContent>
         <NavButton to="/">VIP</NavButton>
         <Bars onClick={toggle} />
-        <NavLink to="/">Servidores</NavLink>
+        <NavLink to="/servidores">Servidores</NavLink>
         <NavLink to="/">Suporte</NavLink>
-        <NavLink to="/">FAQ</NavLink>
+        <NavLink to="/faq">FAQ</NavLink>
       </NavContent>
     </Nav>
   );

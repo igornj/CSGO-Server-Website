@@ -18,7 +18,7 @@ export const Nav = styled.div`
 
 export const IconLink = styled(Link)`
   img {
-    width: 100px;
+    width: 90px;
     margin: 1rem 1rem 1rem 0rem;
   }
 `;
@@ -35,6 +35,7 @@ export const NavLink = styled(Link)`
     transition: all 0.2s ease-in-out;
     color: #adadad;
   }
+
   padding: 1rem 2rem;
   @media screen and (max-width: 700px) {
     display: none;

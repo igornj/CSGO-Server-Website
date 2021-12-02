@@ -17,10 +17,10 @@ function Main() {
       <MainTitle>
         <h1>Sobre Nós</h1>
         <p>
-          O UpperClutch nasceu de um grupo de amigos apaixonados por FPS. O CSGO
-          fez grande parte dessa amizade que dura mais de 10 anos, Essa paixão
-          pelo game nos fez buscar formas de melhorar a experiência para a
-          comunidade.
+          O Time UpperClutch nasceu de um grupo de amigos apaixonados por FPS. O
+          CSGO fez grande parte dessa amizade que dura mais de 10 anos. Paixão
+          essa pelo game que nos fez buscar formas de melhorar a experiência e a
+          diversão da comunidade.
         </p>
       </MainTitle>
       <MainContent>

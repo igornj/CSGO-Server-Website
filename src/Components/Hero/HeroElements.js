@@ -8,9 +8,9 @@ export const HeroContainer = styled.div`
   align-items: center;
   text-align: center;
   flex-direction: column;
-  height: 550px;
+  height: 700px;
   color: white;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
     url(${bgImg});
   background-position: center;
   background-size: cover;
@@ -43,15 +43,12 @@ export const HeroWrapper = styled.div`
   }
 
   @media screen and (min-width: 700px) {
-    transition: all 0.2s ease-in-out;
     margin-left: 5rem;
 
     h1 {
-      transition: all 0.2s ease-in-out;
       font-size: clamp(1rem, 4rem, 5rem);
     }
     p {
-      transition: all 0.2s ease-in-out;
       font-weight: 100;
       font-size: clamp(0.8rem, 1.5rem, 2rem);
     }

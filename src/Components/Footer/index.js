@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../Assets/images/logo-upc.jpg';
+import logo from '../../Assets/images/upc-logo-branco-02.png';
 
 import { Foo, FooLink, IconLink, FooContent, By } from './FooterElements';
 
@@ -12,9 +12,9 @@ export default function Footer() {
 
       <FooContent>
         <FooLink to="/">Se torne um VIP</FooLink>
-        <FooLink to="/">Servidores</FooLink>
+        <FooLink to="/servidores">Servidores</FooLink>
         <FooLink to="/">Suporte</FooLink>
-        <FooLink to="/">FAQ</FooLink>
+        <FooLink to="/faq">FAQ</FooLink>
       </FooContent>
 
       <By>

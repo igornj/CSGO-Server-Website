@@ -8,8 +8,8 @@ function Sidebar({ isOpen, toggle }) {
     <SidebarContainer isOpen={isOpen} onclick={toggle}>
       <SidebarMenu>
         <SidebarLink to="/">Se torne um VIP</SidebarLink>
-        <SidebarLink to="/">Servidores</SidebarLink>
-        <SidebarLink to="/">FAQ</SidebarLink>
+        <SidebarLink to="/servidores">Servidores</SidebarLink>
+        <SidebarLink to="/faq">FAQ</SidebarLink>
         <SidebarLink to="/">Suporte</SidebarLink>
       </SidebarMenu>
     </SidebarContainer>

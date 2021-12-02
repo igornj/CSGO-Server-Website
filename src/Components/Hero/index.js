@@ -19,7 +19,7 @@ function Hero() {
         <HeroWrapper>
           <h1>UpperCluch</h1>
           <p>Servidores no Brasil de DM</p>
-          <HeroButton to="/">Servidores</HeroButton>
+          <HeroButton to="/servidores">Servidores</HeroButton>
         </HeroWrapper>
       </HeroContainer>
     </>
