@@ -19,7 +19,7 @@ function Servidores() {
       <ServerComponent>
         <ServerHero>
           <h1>Servidores</h1>
-          <p>Conheça nossos servidores abaixo</p>
+          <p>Conheça nossos servidores</p>
         </ServerHero>
         <Servers>
           <p>1</p>

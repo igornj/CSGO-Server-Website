@@ -22,8 +22,8 @@ export default function Navbar({ toggle }) {
         <NavButton to="/">VIP</NavButton>
         <Bars onClick={toggle} />
         <NavLink to="/servidores">Servidores</NavLink>
-        <NavLink to="/">Suporte</NavLink>
         <NavLink to="/faq">FAQ</NavLink>
+        <NavLink to="/">Suporte</NavLink>
       </NavContent>
     </Nav>
   );

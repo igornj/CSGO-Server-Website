@@ -41,7 +41,7 @@ function Main() {
           <h1>Skins de graça</h1>
           <p>
             Você pode utilizar as skins de facas, luvas e armas dentro do
-            servidor. Utilizando o comando !ws.
+            servidor, utilizando o comando !ws.
           </p>
         </div>
 

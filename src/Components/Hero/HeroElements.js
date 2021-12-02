@@ -31,7 +31,7 @@ export const HeroContainer = styled.div`
 
 export const HeroWrapper = styled.div`
   h1 {
-    font-size: clamp(1rem, 2.5rem, 3.5rem);
+    font-size: clamp(1rem, 4rem, 3.5rem);
     z-index: 1;
     letter-spacing: 1px;
   }
@@ -39,7 +39,7 @@ export const HeroWrapper = styled.div`
     margin-top: 5px;
     margin-bottom: 3rem;
     font-weight: 100;
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 1.2rem, 1.5rem);
   }
 
   @media screen and (min-width: 700px) {
