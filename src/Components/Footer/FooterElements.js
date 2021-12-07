@@ -1,6 +1,7 @@
 import styled from 'styled-components';
-// eslint-disable-next-line no-unused-vars
-import { Link } from 'react-router-dom';
+// import { Link as LinkR } from 'react-router-dom';
+import { Link as LinkS } from 'react-scroll';
+import { HashLink as LinkH } from 'react-router-hash-link';
 
 export const Foo = styled.div`
   display: flex;
@@ -16,7 +17,8 @@ export const Foo = styled.div`
   //border-top: 1px solid #0a0a0a;
 `;
 
-export const IconLink = styled(Link)`
+export const IconLink = styled(LinkS)`
+  cursor: pointer;
   img {
     width: 8rem;
     margin: 1rem;
@@ -29,7 +31,19 @@ export const FooContent = styled.div`
   margin: 0rem 4rem 0.5rem 1rem;
 `;
 
-export const FooLink = styled(Link)`
+export const FooLink = styled(LinkH)`
+  font-size: clamp(0.5rem, 0.8rem, 1rem);
+  color: #fff;
+  margin-bottom: 0.4rem;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    color: #adadad;
+  }
+`;
+
+export const FooScroll = styled(LinkS)`
+  cursor: pointer;
   font-size: clamp(0.5rem, 0.8rem, 1rem);
   color: #fff;
   margin-bottom: 0.4rem;

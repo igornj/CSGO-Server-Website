@@ -11,7 +11,7 @@ export default createGlobalStyle`
 
   body{
     font-family: 'Outfit', sans-serif;
-    background: #0a0a0a;
+    background: #fff;
     overflow-x: hidden;
   }
 

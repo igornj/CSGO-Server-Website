@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { FaqContainer, FaqHero, Faq } from './FaqElements';
+import { VipComponent, VipHero, Vip } from './VipElements';
 
 // Components
 import Navbar from '../../Components/Navbar';
-import Sidebar from '../../Components/Sidebar';
 import Footer from '../../Components/Footer';
+import Sidebar from '../../Components/Sidebar';
 
 function Servidores() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,23 +13,23 @@ function Servidores() {
     setIsOpen(!isOpen);
   };
   return (
-    <>
+    <div id="vip">
       <Navbar toggle={toggle} />;
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <FaqContainer>
-        <FaqHero>
-          <h1>FAQ</h1>
-          <p>Perguntas e Respostas</p>
-        </FaqHero>
-        <Faq>
+      <VipComponent>
+        <VipHero>
+          <h1>VIP</h1>
+          <p>Se torne um VIP em nossos servidores</p>
+        </VipHero>
+        <Vip>
           <p>1</p>
           <p>1</p>
           <p>1</p>
           <p>1</p>
-        </Faq>
-      </FaqContainer>
+        </Vip>
+      </VipComponent>
       <Footer />
-    </>
+    </div>
   );
 }
 

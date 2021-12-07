@@ -1,20 +1,38 @@
 import React from 'react';
+import { animateScroll as scroll } from 'react-scroll';
 import logo from '../../Assets/images/upc-logo-branco-02.png';
 
-import { Foo, FooLink, IconLink, FooContent, By } from './FooterElements';
+import {
+  Foo,
+  FooLink,
+  FooScroll,
+  IconLink,
+  FooContent,
+  By,
+} from './FooterElements';
 
 export default function Footer() {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <Foo>
-      <IconLink to="/">
+      <IconLink onClick={scrollToTop} spy smooth duration={500} delay={2000}>
         <img src={logo} alt="logo" />
       </IconLink>
 
       <FooContent>
-        <FooLink to="/">Se torne um VIP</FooLink>
-        <FooLink to="/servidores">Servidores</FooLink>
+        <FooLink to="/vip#vip">Se torne um VIP</FooLink>
+        <FooLink to="/servidores#servidores">Servidores</FooLink>
+        {window.location.pathname === '/' ? (
+          <FooScroll to="faq">FAQ</FooScroll>
+        ) : (
+          <FooLink to="/#faq" smooth duration={1000}>
+            FAQ
+          </FooLink>
+        )}
         <FooLink to="/">Suporte</FooLink>
-        <FooLink to="/faq">FAQ</FooLink>
       </FooContent>
 
       <By>

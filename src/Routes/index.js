@@ -4,7 +4,7 @@ import { Route, BrowserRouter, Routes } from 'react-router-dom';
 // Pages
 import Homepage from '../Pages/Homepage';
 import Servidores from '../Pages/Servidores';
-import Faq from '../Pages/FAQ';
+import Vip from '../Pages/VIP';
 
 export default function Router() {
   return (
@@ -12,8 +12,8 @@ export default function Router() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Homepage />} />
+          <Route exact path="/vip" element={<Vip />} />
           <Route exact path="/servidores" element={<Servidores />} />
-          <Route exact path="/faq" element={<Faq />} />
         </Routes>
       </BrowserRouter>
     </div>

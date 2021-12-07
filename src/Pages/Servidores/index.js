@@ -13,7 +13,7 @@ function Servidores() {
     setIsOpen(!isOpen);
   };
   return (
-    <>
+    <div id="servidores">
       <Navbar toggle={toggle} />;
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <ServerComponent>
@@ -29,7 +29,7 @@ function Servidores() {
         </Servers>
       </ServerComponent>
       <Footer />
-    </>
+    </div>
   );
 }
 

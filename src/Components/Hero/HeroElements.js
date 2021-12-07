@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { HashLink as LinkH } from 'react-router-hash-link';
 import bgImg from '../../Assets/images/mirage.jpeg';
 
 export const HeroContainer = styled.div`
@@ -55,7 +56,7 @@ export const HeroWrapper = styled.div`
   }
 `;
 
-export const HeroButton = styled(Link)`
+export const HeroButton = styled(LinkH)`
   cursor: pointer;
   color: #fff;
   background: #0a0a0a;

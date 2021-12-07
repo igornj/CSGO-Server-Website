@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { animateScroll as scroll } from 'react-scroll';
 import logo from '../../Assets/images/upc-logo-branco.png';
 
 import {
   Nav,
   NavLink,
+  NavScroll,
   Bars,
   IconLink,
   NavButton,
@@ -12,18 +14,30 @@ import {
 } from './NavbarElements';
 
 export default function Navbar({ toggle }) {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
   return (
     <Nav>
-      <IconLink to="/">
+      <IconLink to="/" onClick={scrollToTop}>
         <img src={logo} alt="logo" />
       </IconLink>
 
       <NavContent>
-        <NavButton to="/">VIP</NavButton>
+        <NavButton to="/vip#vip">VIP</NavButton>
         <Bars onClick={toggle} />
-        <NavLink to="/servidores">Servidores</NavLink>
-        <NavLink to="/faq">FAQ</NavLink>
-        <NavLink to="/">Suporte</NavLink>
+        <NavLink to="/servidores#servidores">Servidores</NavLink>
+        {window.location.pathname === '/servidores' ? (
+          <NavLink to="/#faq" smooth duration={1000}>
+            FAQ
+          </NavLink>
+        ) : (
+          <NavScroll to="faq" smooth duration={1000}>
+            FAQ
+          </NavScroll>
+        )}
+
+        <NavLink to="/#faq">Suporte</NavLink>
       </NavContent>
     </Nav>
   );

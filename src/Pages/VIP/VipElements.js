@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 import bgImg from '../../Assets/images/mirage.jpeg';
 
-export const FaqContainer = styled.div`
+export const VipComponent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 `;
 
-export const FaqHero = styled.div`
+export const VipHero = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +34,7 @@ export const FaqHero = styled.div`
   }
 `;
 
-export const Faq = styled.div`
+export const Vip = styled.div`
   background: #fff;
   width: 100%;
   height: 100vh;

@@ -23,7 +23,7 @@ export const MainTitle = styled.div`
 
   h1 {
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 10px;
   }

@@ -14,7 +14,7 @@ import {
 function Main() {
   return (
     <MainContainer>
-      <MainTitle>
+      <MainTitle name="main">
         <h1>Sobre Nós</h1>
         <p>
           O Time UpperClutch nasceu de um grupo de amigos apaixonados por FPS. O

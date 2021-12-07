@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 // eslint-disable-next-line no-unused-vars
 import { FaBars } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link as LinkR } from 'react-router-dom';
+import { Link as LinkS } from 'react-scroll';
+import { HashLink as LinkH } from 'react-router-hash-link';
 
 export const Nav = styled.div`
   display: flex;
@@ -16,7 +18,8 @@ export const Nav = styled.div`
   height: 80px;
 `;
 
-export const IconLink = styled(Link)`
+export const IconLink = styled(LinkR)`
+  cursor: pointer;
   img {
     width: 90px;
     margin: 1rem 1rem 1rem 0rem;
@@ -28,9 +31,10 @@ export const NavContent = styled.div`
   align-items: center;
 `;
 
-export const NavLink = styled(Link)`
+export const NavLink = styled(LinkH)`
   color: #fff;
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
   &:hover {
     transition: all 0.2s ease-in-out;
     color: #adadad;
@@ -42,7 +46,22 @@ export const NavLink = styled(Link)`
   }
 `;
 
-export const NavButton = styled(Link)`
+export const NavScroll = styled(LinkS)`
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    color: #adadad;
+  }
+
+  padding: 1rem 2rem;
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+`;
+
+export const NavButton = styled(LinkH)`
   cursor: pointer;
   color: #0a0a0a;
   background: #fff;

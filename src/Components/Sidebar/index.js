@@ -1,15 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { SidebarContainer, SidebarMenu, SidebarLink } from './SidebarElements';
+import {
+  SidebarContainer,
+  SidebarMenu,
+  SidebarLink,
+  SidebarScroll,
+} from './SidebarElements';
 
 function Sidebar({ isOpen, toggle }) {
   return (
     <SidebarContainer isOpen={isOpen} onclick={toggle}>
       <SidebarMenu>
-        <SidebarLink to="/">Se torne um VIP</SidebarLink>
-        <SidebarLink to="/servidores">Servidores</SidebarLink>
-        <SidebarLink to="/faq">FAQ</SidebarLink>
+        <SidebarLink to="/servidores#servidores">Servidores</SidebarLink>
+        {window.location.pathname === '/' ? (
+          <SidebarScroll to="faq">FAQ</SidebarScroll>
+        ) : (
+          <SidebarLink to="/#faq" smooth duration={1000}>
+            FAQ
+          </SidebarLink>
+        )}
         <SidebarLink to="/">Suporte</SidebarLink>
       </SidebarMenu>
     </SidebarContainer>
