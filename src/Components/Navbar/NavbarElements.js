@@ -10,7 +10,6 @@ export const Nav = styled.div`
   justify-content: space-between;
   align-items: center;
   background: #0a0a0a;
-  border-bottom: solid 1px white;
   white-space: nowrap;
   z-index: 999;
   position: fixed;
