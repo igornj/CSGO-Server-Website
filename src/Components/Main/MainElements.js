@@ -34,7 +34,6 @@ export const MainTitle = styled.div`
   }
 
   @media screen and (max-width: 700px) {
-    margin-top: 0rem;
     width: 80vw;
   } ;
 `;

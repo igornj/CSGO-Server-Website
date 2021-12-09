@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 // import { Link } from 'react-router-dom';
 import { HashLink as LinkH } from 'react-router-hash-link';
-import bgImgTeste from '../../Assets/images/teste.png';
+// import bgImgTeste from '../../Assets/images/teste.png';
 import bgImg from '../../Assets/images/mirage.jpeg';
 
 export const HeroContainer = styled.div`
@@ -12,8 +12,8 @@ export const HeroContainer = styled.div`
   flex-direction: column;
   height: 100vh;
   color: white;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url(${bgImgTeste});
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url(${bgImg});
   background-position: center;
   background-size: cover;
 
