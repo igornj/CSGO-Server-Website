@@ -1,5 +1,11 @@
+/* eslint-disable no-alert */
 import React, { useState } from 'react';
-import { ServerComponent, ServerHero, Servers } from './ServidoresElements';
+import {
+  ServerComponent,
+  ServerHero,
+  Servers,
+  CopyButton,
+} from './ServidoresElements';
 
 // Components
 import Navbar from '../../Components/Navbar';
@@ -12,6 +18,7 @@ function Servidores() {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <div id="servidores">
       <Navbar toggle={toggle} />;
@@ -20,6 +27,13 @@ function Servidores() {
         <ServerHero>
           <h1>Servidores</h1>
           <p>Conheça nossos servidores</p>
+          <CopyButton
+            type="button"
+            onClick={() => {
+              navigator.clipboard.writeText('Servidor teste');
+              alert('Server copiado');
+            }}
+          />
         </ServerHero>
         <Servers>
           <p>1</p>
