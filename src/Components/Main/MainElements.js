@@ -13,12 +13,12 @@ export const MainContainer = styled.div`
   align-items: center;
   flex-direction: column;
   background: #fff;
+  margin-top: -3rem;
 `;
 
 export const MainTitle = styled.div`
   color: #0a0a0a;
   height: 200px;
-  margin-top: 2rem;
   width: 70vw;
 
   h1 {

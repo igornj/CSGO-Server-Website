@@ -15,18 +15,32 @@ export const Foo = styled.div`
   width: 100%;
   height: 150px;
   //border-top: 1px solid #0a0a0a;
+
+  @media screen and (max-width: 700px) {
+    justify-content: space-evenly;
+  }
 `;
 
 export const IconLink = styled(LinkS)`
   cursor: pointer;
+  margin-left: 1rem;
   img {
     width: 8rem;
     margin: 1rem;
   }
 `;
 
-export const FooContent = styled.div`
+// export const FooContent = styled.div`
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   flex-direction: row;
+//   margin: 0rem 4rem 0.5rem 1rem;
+// `;
+
+export const FooElements = styled.div`
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   margin: 0rem 4rem 0.5rem 1rem;
 `;

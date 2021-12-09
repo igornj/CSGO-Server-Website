@@ -17,7 +17,7 @@ function Hero() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <HeroContainer>
         <HeroWrapper>
-          <h1>UpperCluch</h1>
+          <h1>UpperClutch</h1>
           <p>Servidores no Brasil de DM</p>
           <HeroButton to="/servidores#servidores">Servidores</HeroButton>
         </HeroWrapper>

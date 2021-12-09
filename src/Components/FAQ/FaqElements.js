@@ -29,7 +29,7 @@ export const Faq = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 50%;
+  width: 80%;
   color: #0a0a0a;
   margin-left: 5rem;
 

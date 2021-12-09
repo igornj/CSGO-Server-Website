@@ -2,14 +2,7 @@ import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import logo from '../../Assets/images/upc-logo-branco-02.png';
 
-import {
-  Foo,
-  FooLink,
-  FooScroll,
-  IconLink,
-  FooContent,
-  By,
-} from './FooterElements';
+import { Foo, FooLink, IconLink, FooElements, By } from './FooterElements';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -22,18 +15,12 @@ export default function Footer() {
         <img src={logo} alt="logo" />
       </IconLink>
 
-      <FooContent>
+      <FooElements>
         <FooLink to="/vip#vip">Se torne um VIP</FooLink>
         <FooLink to="/servidores#servidores">Servidores</FooLink>
-        {window.location.pathname === '/' ? (
-          <FooScroll to="faq">FAQ</FooScroll>
-        ) : (
-          <FooLink to="/#faq" smooth duration={1000}>
-            FAQ
-          </FooLink>
-        )}
+        <FooLink to="/#faq">FAQ</FooLink>
         <FooLink to="/">Suporte</FooLink>
-      </FooContent>
+      </FooElements>
 
       <By>
         <p>
@@ -46,3 +33,12 @@ export default function Footer() {
     </Foo>
   );
 }
+
+// {window.location.pathname === '/' ? (
+//   <FooScroll to="faq">FAQ</FooScroll>
+// ) : (
+//   <FooLink to="/#faq" smooth duration={1000}>
+//     FAQ
+//   </FooLink>
+// )}
+// <FooLink to="/">Suporte</FooLink>
