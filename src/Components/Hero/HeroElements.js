@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-// import { Link } from 'react-router-dom';
 import { HashLink as LinkH } from 'react-router-hash-link';
+import { FaCopy } from 'react-icons/fa';
 // import bgImgTeste from '../../Assets/images/teste.png';
 import bgImg from '../../Assets/images/mirage.jpeg';
 
@@ -74,5 +74,56 @@ export const HeroButton = styled(LinkH)`
   @media screen and (min-width: 700px) {
     padding: 1rem 5rem;
     font-size: 1.2rem;
+  }
+`;
+
+export const CopyButton = styled(FaCopy)`
+  color: #fff;
+  font-size: 2.2rem;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: #0a0a0a;
+  }
+`;
+
+export const CopyTipContainer = styled.div`
+  position: relative;
+  width: 60px;
+  height: 60px;
+  left: 70%;
+  bottom: -17%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0a0a0a;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+
+  &:hover {
+    background: #fff;
+  }
+
+  &:hover span {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  span {
+    visibility: hidden;
+    width: 150px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 999;
+    bottom: -65%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    white-space: nowrap;
   }
 `;

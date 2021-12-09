@@ -1,11 +1,5 @@
 import React, { useState } from 'react';
-import {
-  ServerComponent,
-  ServerHero,
-  Servers,
-  CopyButton,
-  CopyTip,
-} from './ServidoresElements';
+import { ServerComponent, ServerHero, Servers } from './ServidoresElements';
 
 // Components
 import Navbar from '../../Components/Navbar';
@@ -19,13 +13,6 @@ function Servidores() {
     setIsOpen(!isOpen);
   };
 
-  const copyServerId = () => {
-    navigator.clipboard.writeText('Servidor teste');
-
-    const tooltip = document.getElementById('tip');
-    tooltip.innerHTML = 'Copiado!';
-  };
-
   return (
     <div id="servidores">
       <Navbar toggle={toggle} />;
@@ -34,10 +21,6 @@ function Servidores() {
         <ServerHero>
           <h1>Servidores</h1>
           <p>Conheça nossos servidores</p>
-          <CopyTip>
-            <span id="tip">Copiar IP</span>
-            <CopyButton type="button" onClick={copyServerId} />
-          </CopyTip>
         </ServerHero>
         <Servers>
           <p>1</p>
