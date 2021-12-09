@@ -12,7 +12,7 @@ export const HeroContainer = styled.div`
   flex-direction: column;
   height: 100vh;
   color: white;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
     url(${bgImg});
   background-position: center;
   background-size: cover;
@@ -23,7 +23,7 @@ export const HeroContainer = styled.div`
     background: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.5)
+        rgba(0, 0, 0, 0.3)
       ),
       url(${bgImg});
     background-repeat: no-repeat;
@@ -60,9 +60,10 @@ export const HeroWrapper = styled.div`
 
 export const HeroButton = styled(LinkH)`
   cursor: pointer;
+  font-size: 1.2rem;
   color: #fff;
   background: #0a0a0a;
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
   border-radius: 5px;
   transition: all 0.2s ease-in-out;
   z-index: 1;

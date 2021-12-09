@@ -20,16 +20,15 @@ export default function Footer() {
         <FooLink to="/servidores#servidores">Servidores</FooLink>
         <FooLink to="/#faq">FAQ</FooLink>
         <FooLink to="/">Suporte</FooLink>
+        <By>
+          <p>
+            Feito com carinho por
+            <a className="a" href="https://github.com/igornj">
+              Igor Nunes
+            </a>
+          </p>
+        </By>
       </FooElements>
-
-      <By>
-        <p>
-          Feito com carinho por
-          <a className="a" href="https://github.com/igornj">
-            Igor Nunes
-          </a>
-        </p>
-      </By>
     </Foo>
   );
 }
