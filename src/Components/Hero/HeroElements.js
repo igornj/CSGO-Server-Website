@@ -20,11 +20,7 @@ export const HeroContainer = styled.div`
   @media screen and (min-width: 700px) {
     align-items: flex-start;
     text-align: left;
-    background: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.3)
-      ),
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
       url(${bgImg});
     background-repeat: no-repeat;
     background-size: cover;
