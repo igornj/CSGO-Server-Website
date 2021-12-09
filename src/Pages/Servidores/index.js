@@ -1,10 +1,10 @@
-/* eslint-disable no-alert */
 import React, { useState } from 'react';
 import {
   ServerComponent,
   ServerHero,
   Servers,
   CopyButton,
+  CopyTip,
 } from './ServidoresElements';
 
 // Components
@@ -19,6 +19,13 @@ function Servidores() {
     setIsOpen(!isOpen);
   };
 
+  const copyServerId = () => {
+    navigator.clipboard.writeText('Servidor teste');
+
+    const tooltip = document.getElementById('tip');
+    tooltip.innerHTML = 'Copiado!';
+  };
+
   return (
     <div id="servidores">
       <Navbar toggle={toggle} />;
@@ -27,13 +34,10 @@ function Servidores() {
         <ServerHero>
           <h1>Servidores</h1>
           <p>Conheça nossos servidores</p>
-          <CopyButton
-            type="button"
-            onClick={() => {
-              navigator.clipboard.writeText('Servidor teste');
-              alert('Server copiado');
-            }}
-          />
+          <CopyTip>
+            <span id="tip">Copiar IP</span>
+            <CopyButton type="button" onClick={copyServerId} />
+          </CopyTip>
         </ServerHero>
         <Servers>
           <p>1</p>
