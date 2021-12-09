@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { HashLink as LinkH } from 'react-router-hash-link';
-import { FaCopy } from 'react-icons/fa';
+import { HiOutlineClipboardCopy } from 'react-icons/hi';
 // import bgImgTeste from '../../Assets/images/teste.png';
 import bgImg from '../../Assets/images/mirage.jpeg';
 
@@ -122,16 +122,17 @@ export const CopyTipContainer = styled.div`
   @media screen and (max-width: 700px) {
     position: absolute;
     left: 50%;
-    bottom: 30%;
+    bottom: 31%;
     transform: translate(-50%);
   }
 `;
 
-export const CopyButton = styled(FaCopy)`
+export const CopyButton = styled(HiOutlineClipboardCopy)`
   color: #fff;
   font-size: 2.2rem;
   cursor: pointer;
   transition: color 0.2s ease-in-out;
+
   &:hover {
     color: #0a0a0a;
   }
