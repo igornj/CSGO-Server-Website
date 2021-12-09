@@ -77,16 +77,6 @@ export const HeroButton = styled(LinkH)`
   }
 `;
 
-export const CopyButton = styled(FaCopy)`
-  color: #fff;
-  font-size: 2.2rem;
-  cursor: pointer;
-  transition: color 0.2s ease-in-out;
-  &:hover {
-    color: #0a0a0a;
-  }
-`;
-
 export const CopyTipContainer = styled.div`
   position: relative;
   width: 60px;
@@ -98,10 +88,12 @@ export const CopyTipContainer = styled.div`
   align-items: center;
   background: #0a0a0a;
   border-radius: 5px;
+  cursor: pointer;
   transition: background 0.3s ease-in-out;
 
   &:hover {
     background: #fff;
+    color: #0a0a0a;
   }
 
   &:hover span {
@@ -125,5 +117,22 @@ export const CopyTipContainer = styled.div`
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     white-space: nowrap;
+  }
+
+  @media screen and (max-width: 700px) {
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+    transform: translate(-50%);
+  }
+`;
+
+export const CopyButton = styled(FaCopy)`
+  color: #fff;
+  font-size: 2.2rem;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: #0a0a0a;
   }
 `;
