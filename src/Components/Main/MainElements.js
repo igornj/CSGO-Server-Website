@@ -46,7 +46,7 @@ export const MainContent = styled.div`
   flex-direction: column;
   margin: 1rem 2rem 1rem 2rem;
   color: #0a0a0a;
-  width: 40%;
+  width: 60%;
   text-align: center;
 
   h1 {
@@ -64,7 +64,7 @@ export const MainContent = styled.div`
     grid-template-columns: 50% 50%;
     grid-gap: 4rem;
     place-items: center;
-    width: 600px;
+    width: 800px;
     text-align: center;
 
     div:last-child {

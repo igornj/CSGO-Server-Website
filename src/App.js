@@ -14,3 +14,6 @@ const App = function () {
 };
 
 export default App;
+
+// Colocar um toggle pra versão light and dark;
+// Arrumar bugs responsividade;
