@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 // import { Link } from 'react-router-dom';
 import { HashLink as LinkH } from 'react-router-hash-link';
-import bgImg from '../../Assets/images/teste.png';
+import bgImgTeste from '../../Assets/images/teste.png';
+import bgImg from '../../Assets/images/mirage.jpeg';
 
 export const HeroContainer = styled.div`
   display: flex;
@@ -9,23 +10,25 @@ export const HeroContainer = styled.div`
   align-items: center;
   text-align: center;
   flex-direction: column;
-  height: 700px;
+  height: 100vh;
   color: white;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url(${bgImg});
+    url(${bgImgTeste});
   background-position: center;
   background-size: cover;
 
   @media screen and (min-width: 700px) {
     align-items: flex-start;
     text-align: left;
-    /* background: linear-gradient(
+    background: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.5)
       ),
-      url(${bgImg}); */
-    height: 100vh;
+      url(${bgImg});
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
   }
 `;
 

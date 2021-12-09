@@ -20,6 +20,7 @@ export const MainTitle = styled.div`
   color: #0a0a0a;
   height: 200px;
   width: 70vw;
+  margin-top: 4rem;
 
   h1 {
     font-weight: bold;
@@ -33,6 +34,7 @@ export const MainTitle = styled.div`
   }
 
   @media screen and (max-width: 700px) {
+    margin-top: 0rem;
     width: 80vw;
   } ;
 `;
