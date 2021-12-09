@@ -36,7 +36,7 @@ export const HeroWrapper = styled.div`
   }
   p {
     margin-top: 5px;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
     font-weight: 100;
     font-size: clamp(0.8rem, 1.2rem, 1.5rem);
   }
@@ -50,6 +50,7 @@ export const HeroWrapper = styled.div`
     p {
       font-weight: 100;
       font-size: clamp(0.8rem, 1.5rem, 2rem);
+      margin-bottom: 0;
     }
   }
 `;
@@ -63,7 +64,6 @@ export const HeroButton = styled(LinkH)`
   border-radius: 5px;
   transition: all 0.2s ease-in-out;
   z-index: 1;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 
   &:hover {
     transition: all 0.2s ease-in-out;
@@ -82,7 +82,7 @@ export const CopyTipContainer = styled.div`
   width: 60px;
   height: 60px;
   left: 70%;
-  bottom: -17%;
+  bottom: -20%;
   display: flex;
   justify-content: center;
   align-items: center;
