@@ -97,7 +97,7 @@ export const CopyTipContainer = styled.div`
     background-color: #555;
     color: #fff;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border-radius: 6px;
     padding: 5px;
     position: absolute;

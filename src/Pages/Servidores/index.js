@@ -14,7 +14,7 @@ import Footer from '../../Components/Footer';
 import Sidebar from '../../Components/Sidebar';
 
 // Assets
-import mirageImg from '../../Assets/images/mirage.jpeg';
+import mirageImg from '../../Assets/images/mirage_02.jpg';
 
 function Servidores() {
   const [isOpen, setIsOpen] = useState(false);
