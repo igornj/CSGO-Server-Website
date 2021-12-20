@@ -1,6 +1,7 @@
 import styled from 'styled-components';
-// import { FaCopy } from 'react-icons/fa';
+import { FaSteam } from 'react-icons/fa';
 import { HiOutlineClipboardCopy } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
 import bgImg from '../../Assets/images/mirage.jpeg';
 
 export const ServerComponent = styled.div`
@@ -55,11 +56,6 @@ export const Servers = styled.div`
   a {
     white-space: nowrap;
   }
-
-  @media screen and (max-width: 700px) {
-    align-items: center;
-    margin: 2rem 0 0 0;
-  }
 `;
 
 export const Server = styled.div`
@@ -69,8 +65,8 @@ export const Server = styled.div`
 `;
 
 export const CopyTipContainer = styled.div`
-  margin-top: 1rem;
-  width: 30%;
+  margin-top: 0.5rem;
+  width: 130px;
   height: 70px;
   display: flex;
   justify-content: center;
@@ -102,25 +98,43 @@ export const CopyTipContainer = styled.div`
     padding: 5px;
     position: absolute;
     z-index: 999;
-    bottom: 6%;
-    left: 200px;
+    bottom: 10px;
+    left: 40px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     white-space: nowrap;
   }
-
-  /* @media screen and (max-width: 700px) {
-    position: absolute;
-    left: 50%;
-    bottom: 31%;
-    transform: translate(-50%);
-  } */
 `;
 
 export const CopyButton = styled(HiOutlineClipboardCopy)`
   color: #fff;
   width: 100%;
   font-size: 3rem;
+  cursor: pointer;
+  z-index: 1000;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: #777;
+  }
+`;
+
+export const IconLink = styled(Link)`
+  width: 130px;
+  height: 70px;
+  padding: 1rem;
+  background: #0a0a0a;
+  text-align: center;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 3.3rem;
+  left: 12rem;
+`;
+
+export const SteamButton = styled(FaSteam)`
+  color: #fff;
+
+  font-size: 2.5rem;
   cursor: pointer;
   z-index: 1000;
   transition: color 0.2s ease-in-out;

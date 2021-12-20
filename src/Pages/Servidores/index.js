@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState } from 'react';
 import {
   ServerComponent,
@@ -6,6 +7,8 @@ import {
   Server,
   CopyTipContainer,
   CopyButton,
+  SteamButton,
+  IconLink,
 } from './ServidoresElements';
 
 // Components
@@ -55,10 +58,15 @@ function Servidores() {
                 alt="server-info"
               />
             </a>
+
             <CopyTipContainer>
               <span id="tip">Copiar IP</span>
               <CopyButton type="button" onClick={copyServerId} />
             </CopyTipContainer>
+
+            <IconLink to="steam://connect/200.155.174.73:27015">
+              <SteamButton />
+            </IconLink>
           </Server>
         </Servers>
       </ServerComponent>
