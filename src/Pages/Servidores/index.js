@@ -1,16 +1,32 @@
 import React, { useState } from 'react';
-import { ServerComponent, ServerHero, Servers } from './ServidoresElements';
+import {
+  ServerComponent,
+  ServerHero,
+  Servers,
+  Server,
+  CopyTipContainer,
+  CopyButton,
+} from './ServidoresElements';
 
 // Components
 import Navbar from '../../Components/Navbar';
 import Footer from '../../Components/Footer';
 import Sidebar from '../../Components/Sidebar';
 
+// Assets
+import mirageImg from '../../Assets/images/mirage.jpeg';
+
 function Servidores() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen);
+  };
+
+  const copyServerId = () => {
+    navigator.clipboard.writeText('Servidor teste');
+    const tooltip = document.getElementById('tip');
+    tooltip.innerHTML = 'Copiado!';
   };
 
   return (
@@ -23,10 +39,27 @@ function Servidores() {
           <p>Conheça nossos servidores</p>
         </ServerHero>
         <Servers>
-          <p>1</p>
-          <p>1</p>
-          <p>1</p>
-          <p>1</p>
+          <Server>
+            <h1>Servidor Upper DM Mirage</h1>
+            <img width="400px" src={mirageImg} alt="map_mirage" />
+            <a
+              href="https://www.gametracker.com/server_info/200.155.174.73:27015/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://cache.gametracker.com/server_info/200.155.174.73:27015/b_350_20_050505_202743_ffffff_111111.png"
+                border="0"
+                width="400"
+                height="20"
+                alt="server-info"
+              />
+            </a>
+            <CopyTipContainer>
+              <span id="tip">Copiar IP</span>
+              <CopyButton type="button" onClick={copyServerId} />
+            </CopyTipContainer>
+          </Server>
         </Servers>
       </ServerComponent>
       <Footer />

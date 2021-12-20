@@ -8,6 +8,7 @@ function Sidebar({ isOpen, toggle }) {
     <div aria-hidden="true" onClick={toggle}>
       <SidebarContainer isOpen={isOpen} onclick={toggle}>
         <SidebarMenu>
+          <SidebarLink to="/">Inicio</SidebarLink>
           <SidebarLink to="/servidores#servidores">Servidores</SidebarLink>
           <SidebarLink to="/#faq" smooth duration={1000}>
             FAQ

@@ -25,6 +25,7 @@ export default function Navbar({ toggle }) {
 
       <NavContent>
         <NavButton to="/vip#vip">VIP</NavButton>
+        <NavLink to="/">Inicio</NavLink>
         <Bars onClick={toggle} />
         <NavLink to="/servidores#servidores">Servidores</NavLink>
         {window.location.pathname === '/servidores' ? (
