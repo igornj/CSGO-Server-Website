@@ -40,7 +40,7 @@ function Servidores() {
         </ServerHero>
         <Servers>
           <Server>
-            <h1>Servidor Upper DM Mirage</h1>
+            <h1>Upper DeathMatch Mirage</h1>
             <img width="400px" src={mirageImg} alt="map_mirage" />
             <a
               href="https://www.gametracker.com/server_info/200.155.174.73:27015/"
