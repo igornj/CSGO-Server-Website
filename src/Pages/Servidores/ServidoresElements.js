@@ -43,9 +43,9 @@ export const Servers = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   color: #0a0a0a;
-  margin: 2rem 0 0 6rem;
+  margin: 2rem 0 3rem 6rem;
 
   h1 {
     font-weight: 200;
@@ -64,8 +64,14 @@ export const Server = styled.div`
   align-items: flex-start;
 `;
 
+export const Buttons = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
 export const CopyTipContainer = styled.div`
   margin-top: 0.5rem;
+  margin-right: 1rem;
   width: 130px;
   height: 70px;
   display: flex;
@@ -98,7 +104,7 @@ export const CopyTipContainer = styled.div`
     padding: 5px;
     position: absolute;
     z-index: 999;
-    bottom: 10px;
+    bottom: 5px;
     left: 40px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
@@ -126,14 +132,12 @@ export const IconLink = styled(Link)`
   background: #0a0a0a;
   text-align: center;
   border-radius: 5px;
-  position: absolute;
-  bottom: 3.3rem;
-  left: 12rem;
+  margin-top: 0.5rem;
 `;
 
 export const SteamButton = styled(FaSteam)`
   color: #fff;
-
+  width: 100%;
   font-size: 2.5rem;
   cursor: pointer;
   z-index: 1000;

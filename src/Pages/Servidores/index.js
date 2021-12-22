@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState } from 'react';
 import {
@@ -5,6 +6,7 @@ import {
   ServerHero,
   Servers,
   Server,
+  Buttons,
   CopyTipContainer,
   CopyButton,
   SteamButton,
@@ -15,12 +17,14 @@ import {
 import Navbar from '../../Components/Navbar';
 import Footer from '../../Components/Footer';
 import Sidebar from '../../Components/Sidebar';
+import Loading from '../../Components/Loading';
 
 // Assets
 import mirageImg from '../../Assets/images/mirage_02.jpg';
 
 function Servidores() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -32,8 +36,11 @@ function Servidores() {
     tooltip.innerHTML = 'Copiado!';
   };
 
+  // setIsLoading(false);
+
   return (
     <div id="servidores">
+      <Loading isLoading={isLoading} />
       <Navbar toggle={toggle} />;
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <ServerComponent>
@@ -56,17 +63,20 @@ function Servidores() {
                 width="400"
                 height="20"
                 alt="server-info"
+                onLoad={() => setIsLoading(false)}
               />
             </a>
 
-            <CopyTipContainer>
-              <span id="tip">Copiar IP</span>
-              <CopyButton type="button" onClick={copyServerId} />
-            </CopyTipContainer>
+            <Buttons>
+              <CopyTipContainer>
+                <span id="tip">Copiar IP</span>
+                <CopyButton type="button" onClick={copyServerId} />
+              </CopyTipContainer>
 
-            <IconLink to="steam://connect/200.155.174.73:27015">
-              <SteamButton />
-            </IconLink>
+              <IconLink to="steam://connect/200.155.174.73:27015">
+                <SteamButton />
+              </IconLink>
+            </Buttons>
           </Server>
         </Servers>
       </ServerComponent>
